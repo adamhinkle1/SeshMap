@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="background.css" />
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, rgb(70, 126, 172), rgb(177, 204, 230));
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color:  rgb(133, 178, 216);
+}
+
+.active {
+  background-color: rgb(133, 178, 216);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a href="#">Sesh Map</a>
+  <a target="_self" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a class="active" href="#"><i class="fa fa-fw fa-search"></i> Discover</a> 
+  <a target="_self" href="board.html"><i class="fa fa-chevron-circle-right"></i> The Board</a>
+  <a target="_self" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a target="_self" href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<form action="map.html" method="get" target="_blank">
+  <button type="submit">Search Map</button>
+</form>
+<form action="" method="get" target="_blank">
+  <button type="submit">Click me</button>
+</form>
+</body>
+</html> 

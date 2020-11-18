@@ -1,0 +1,30 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, rgb(70, 126, 172), rgb(177, 204, 230));
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color:  rgb(133, 178, 216);
+}
+
+.active {
+  background-color: rgb(133, 178, 216);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
